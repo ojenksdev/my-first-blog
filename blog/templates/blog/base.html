@@ -1,28 +1,43 @@
 {% load static %}
 <html>
     <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Handlee|Kaushan+Script|Lato:300|Permanent+Marker" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <title>My Python Blog - Osei Jenkins</title>
     </head>
     <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg page-header">
+
     {% if user.is_authenticated %}
-        <div class="page-header">
+    <div>
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
     {% endif %}
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+            <h1 id="pagetitle"><a href="/">My Python Learning Blog</a></h1>
+            <h4 style="text-align:center;">Detailing my journey to becoming a better python developer.</h4>
+    </div>
+      </div>
+            </div>
 
 
-        <div class="content container">
+        <div class="content">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-lg">
        {% block content %}
        {% endblock %}
         </div>
     </div>
+        </div>
+
+
         </div>
     </body>
 </html>

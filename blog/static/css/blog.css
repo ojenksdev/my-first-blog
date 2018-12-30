@@ -1,34 +1,53 @@
 h1, a, h2, a {
-    color: #C25100;
-    font-family: 'Lobster';
+    color: #21a838;
+    font-family: 'Permanent Marker', cursive;
 }
 
-body {
-    padding-left: 15px;
+a:hover {
+    color: #1cc413;
 }
 
 .page-header {
-    background-color: #C25100;
+    background-color: #21a838;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 1%;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
+    color: #fff;
     font-size: 36pt;
     text-decoration: none;
 }
 
+#pagetitle {
+    text-align:center;
+}
+
 .content {
-    margin-left: 40px;
+    margin: 2%;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Permanent Marker', cursive;
 }
 
-.date {
-    color: #828282;
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+.date p {
+    color: #9ba0a0;
+    font-family: 'Handlee', cursive;
+    padding-bottom: 2%;
+    padding-top: -12px;
+}
+
+.date_detailed p {
+    color: #9ba0a0;
+    font-family: 'Handlee', cursive;
+    padding-bottom: 2%;
+    margin-top: -3%;
 }
 
 .save {
@@ -40,7 +59,7 @@ h1, h2, h3, h4 {
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
+    color: #fff;
     float: right;
     font-size: 26pt;
     margin-right: 20px;
