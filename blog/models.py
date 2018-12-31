@@ -12,6 +12,9 @@ class Post(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
 
+    class Meta:
+        ordering = ('-published_date',)
+
     def publish(self):
         """Used to publish posts to the website"""
         self.published_date = timezone.now()
