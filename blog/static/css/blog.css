@@ -8,6 +8,10 @@ h2 a {
     font-family: 'Permanent Marker', cursive;
 }
 
+a {
+    color: #21a838;
+}
+
 a:hover {
     color: #1cc413;
 }
