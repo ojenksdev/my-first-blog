@@ -8,7 +8,7 @@ class Post(models.Model):
     """Represents the posts made by a blogger."""
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
-    text = HTMLField('Text')
+    text = HTMLField('Content')
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
 
